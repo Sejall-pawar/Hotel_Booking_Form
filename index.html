@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+</head>
+<body>
+    <h2>Hotel Booking Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Booking Details</legend>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required><br><br>
+            
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required><br><br>
+            
+            <label for="roomtype">Room Type:</label>
+            <select id="roomtype" name="roomtype" required>
+                <option value="">Select Room Type</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select><br><br>
+            
+            <label for="numrooms">Number of Rooms:</label>
+            <input type="number" id="numrooms" name="numrooms" min="1" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Requests</legend>
+            <label for="meal">Meal Preference:</label><br>
+            <input type="radio" id="meal_none" name="meal" value="none" checked>
+            <label for="meal_none">None</label><br>
+            <input type="radio" id="meal_veg" name="meal" value="vegetarian">
+            <label for="meal_veg">Vegetarian</label><br>
+            <input type="radio" id="meal_nonveg" name="meal" value="non-vegetarian">
+            <label for="meal_nonveg">Non-Vegetarian</label><br><br>
+
+            <label for="specialreq">Special Requests:</label><br>
+            <textarea id="specialreq" name="specialreq" rows="4" cols="50"></textarea><br><br>
+
+            <label for="carrental">Car Rental:</label>
+            <input type="checkbox" id="carrental" name="carrental"><br><br>
+
+            <label for="airportpickup">Airport Pickup:</label>
+            <input type="checkbox" id="airportpickup" name="airportpickup"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Book Now">
+    </form>
+</body>
+</html>
